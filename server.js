@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "https://my-social-app-reactfrontend.netlify.app/", // ✅ Replace with your actual Netlify URL
+  origin: "https://my-social-app-reactfrontend.netlify.app", // ✅ Replace with your actual Netlify URL
   credentials: true
 }));
 
