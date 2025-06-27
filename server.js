@@ -8,7 +8,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://my-social-app-reactfrontend.netlify.app/", // ✅ Replace with your actual Netlify URL
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use("/api/auth", require("./routes/authRoutes"));
